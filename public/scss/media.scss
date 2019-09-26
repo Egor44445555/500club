@@ -668,6 +668,7 @@
 
                 .footer-wrap {
                     height: auto;
+                    min-height: 0;
                     background: linear-gradient(0deg, #3A3F4A, #3A3F4A), radial-gradient(134.98% 98.96% at 50% 51.62%, rgba(236, 237, 239, 0) 0%, #EDEDED 100%);
 
                     .btn {
@@ -682,8 +683,9 @@
                 left: auto;
                 top: 40px;
                 width: 30px;
-                height: 28px;
-                background: url("../images/close.png");
+                height: 29px;
+                padding: 0;
+                background: url(../images/icons/close.svg);
                 background-size: cover;
 
                 &:before {
