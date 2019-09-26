@@ -180,6 +180,7 @@ $(document).ready(function() {
     var twoBlock = $('.two-block');
     var videoBlockWrap = $('.video-block-wrap');
     var video = $('.auto-play-video');
+    var footerScroll = $('.footer');
 
     animate.each(function() {
         if (($(this).offset().top - 100) <= $(window).scrollTop()) {
@@ -193,6 +194,7 @@ $(document).ready(function() {
     var title3 = $(".title3").offset().top;
     var videoWrap = $(".video-block-wrap").offset().top;
     var blueBlock = $(".blue-block").offset().top;
+    var blueBlockHeight = $(".blue-block").height();
 
     function scrollTitle() {
         if($(window).scrollTop() < title1) {
@@ -210,9 +212,8 @@ $(document).ready(function() {
         if($(window).scrollTop() >= title2 ){
             $('.hidden-title').text('На что влияет клуб');
             $('.logo').addClass('hide');
-
         }
-        if($(window).scrollTop() >= videoWrap ){
+        if($(window).scrollTop() >= videoWrap - 500 ){
             $('.hidden-title').html('').removeClass('active');
             $('.logo').removeClass('hide');
         }
@@ -224,10 +225,17 @@ $(document).ready(function() {
             $('.hidden-title').text('Наши резиденты');
             $('.logo').addClass('hide');
         }
-        if($(window).scrollTop() >= blueBlock ){
-            $('.hidden-title').text('').removeClass('active');
+        if($(window).scrollTop() >= blueBlock - 300 ){
+            $('.hidden-title').text('Оставь заявку');
+            $('.logo').addClass('hide');
+        }
+        if($(window).scrollTop() > blueBlock + blueBlockHeight - 200){
+            $('.hidden-title').html('').removeClass('active');
             $('.logo').removeClass('hide');
         }
+
+        console.log( blueBlock + blueBlockHeight, 'block');
+        console.log( $(window).scrollTop());
     }
 
 
