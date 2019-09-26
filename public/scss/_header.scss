@@ -110,6 +110,11 @@
         height: 60px;
         background: $white;
 
+        .right-block {
+            padding-top: 8px;
+            align-items: flex-start;
+        }
+
         .logo {
             display: block !important;
 

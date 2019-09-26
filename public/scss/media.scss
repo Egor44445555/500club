@@ -498,6 +498,7 @@
 
         .mobile-block {
             display: flex;
+            align-items: center;
 
             ul {
                 flex: 1;
@@ -507,6 +508,7 @@
             img {
                 max-width: 40%;
                 object-fit: contain;
+                max-height: 170px;
             }
         }
     }
@@ -737,6 +739,23 @@
                 width: 100%;
             }
         }
+
+        .mobile-block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            ul {
+                max-width: 50%;
+                margin-right: 0;
+                padding-right: 20px;
+            }
+
+            img {
+                margin: 0;
+                transform: translate(0) !important;
+            }
+        }
     }
     .influence-block {
         margin-left: -20px;
@@ -895,6 +914,12 @@
             }
         }
     }
+}
+
+/******************************************************************/
+
+@media (max-width: 426px) {
+
 }
 
 /******************************************************************/
