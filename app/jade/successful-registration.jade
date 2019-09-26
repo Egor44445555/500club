@@ -1,0 +1,49 @@
+html
+    title Home
+    include ./blocks/head.jade
+
+    body.main-page
+        include ./blocks/header.jade
+
+        .wrapper
+            .success-block-wrap(style="background-image:url(images/assets/first-image.jpg)")
+                .container-block
+                    .success-block
+                        .title Спасибо
+                        p Наши менеджеры скоро свяжутся с тобой
+
+                        .video-wrap
+                            .video
+                                .hover
+                                    img(src="images/assets/preview2.jpg")
+                                iframe(src="https://www.youtube.com/embed/_wmpQApk644" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                            .info
+                                .time
+                                    .icon.icon-clock
+                                    .text 1:44
+
+                        .h3.mt-100.mt-t-90 Подпишись на наши медиа
+
+                        .media-list-wrap
+                            .media-list
+                                .media-list-item
+                                    .info
+                                        .image
+                                            img(src="images/icons/youtube.svg")
+                                        .text
+                                            .title-text Club 500
+                                            p 1.4 млн. подпищиков
+                                    .button-wrap
+                                        a(href="#").btn.btn-gray Подписаться
+
+                                .media-list-item
+                                    .info
+                                        .image
+                                            img(src="images/icons/instagram.svg")
+                                        .text
+                                            .title-text Club 500
+                                            p 147 тыс. подпищиков
+                                    .button-wrap
+                                        a(href="#").btn.btn-gray Подписаться
+
+        include ./blocks/scripts.jade

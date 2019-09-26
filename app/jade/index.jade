@@ -1,0 +1,370 @@
+html
+    title Home
+    include ./blocks/head.jade
+
+    body.main-page
+        include ./blocks/header.jade
+
+        .wrapper
+            .first-block(style="background-image:url(images/assets/first-image.jpg)")
+                .container-block
+                    .left-block
+                        .text
+                           h1.main-title Вступай в закрытый клуб предпринимателей и топ-менеджеров
+                           p с личным доходом&nbsp;
+                                a(href="#") от 1 млн рублей в месяц
+
+                        a(href="#videoModal").video-wrap.modal-btn
+                            .video
+                                .hover
+                                    img(src="images/assets/preview.jpg")
+                            .info
+                                .caption Посмотри видео и узнай больше о клубе
+                                .time
+                                    .icon.icon-clock
+                                    .text 1:44
+
+                    .right-block
+                        .form-wrap
+                            .title
+                                span Оставь заявку на вступление в клуб
+                                .button.form-scroll
+
+                            form.form
+                                .row
+                                    .col
+                                        .input-wrap
+                                            input.input(placeholder="Имя" required)
+                                .row
+                                    .col
+                                        .input-wrap
+                                            input.input(placeholder="Телефон" required).phone
+                                .row
+                                    .col
+                                        .input-wrap
+                                            input.input(placeholder="Email" required)
+                                .row
+                                    .col
+                                        p.gray-color Нажимая кнопку «Оставить заявку» вы принимаете»&nbsp;
+                                            a(href="#conditions")
+                                                | условия передачи пользовательских данных
+                                .row
+                                    .col
+                                        button(type="submit").btn Оставить заявку
+                                .row
+                                    .col
+                                        p Заполни заявку и получи подробную презентацию клуба на следующем шаге
+
+
+            .residents-block-wrap.title1
+                .container-block
+                    h2.sticky-text Резиденты клуба
+                    .residents-block.animate
+                        .residents-block-item
+                            .wrap
+                                .num 01
+                                .title Предприниматели Топ-менежеры
+
+                                .label Критерии
+                                ul
+                                    li Личный доход от 1 млн рублей
+                                    li Опыт от 3-х лет
+                                    li Экологичные ниши, не противоречащие Уставу
+                            a(href="#footer").btn.modal-btn.footer-btn Узнать подробнее о правилах отбора
+
+                        .residents-block-item
+                            .wrap
+                                .num 02
+                                .title Вступление в клуб
+                                b 3 этапа отбора, чтобы собрать сильнейших участников
+                                ol
+                                    li Анкета
+                                    li Собеседование
+                                    li Проверка СБ
+
+                        .residents-block-item
+                            .image-wrap
+                                .num 03
+                                .image
+                                    img(src="images/assets/resident.jpg")
+                                .text
+                                    .title Доверие
+                                    p Только в атмосфере максимального доверия, когда каждый понимает, что находится в надежном сообществе опытных предпринимателей, схожих по опыту и целям, резиденты могут открыться и реально помогать друг другу
+
+                        .residents-block-item.mobile-block
+                            a(href="#footer").btn.modal-btn.footer-btn Узнать подробнее о правилах отбора
+
+            .influence-block-wrap.title2
+                .container-block
+                    .title-wrap
+                        .left-block
+                            h2.sticky-text На что влияет клуб
+
+                        .right-block
+                            .h4 Выйди на новый уровень развития благодаря возможностям нашего клуба
+
+                    .influence-block
+                        a(href="#" style="background-image: url(images/assets/influence.jpg);").influence-block-item
+                            span.info
+                                span.icon.icon-save-money
+                                span.name Бизнес
+                        a(href="#" style="background-image: url(images/assets/influence2.jpg);").influence-block-item
+                            span.info
+                                span.icon.icon-environment
+                                span.name Окружение
+                        a(href="#" style="background-image: url(images/assets/influence3.jpg);").influence-block-item
+                            span.info
+                                span.icon.icon-wind
+                                span.name Энергия
+
+            .container-block
+                .two-block
+                    .text.left
+                        h3.title Получи материалы о клубе и резидентах, которые помогут детально изучить продукт и понять, какие возможности он открывает именно для тебя.
+
+                        .mobile-block
+                            ul
+                                li Презентация клуба
+                                li Видео о клубе
+                                li Каталог резидентов с их историями и кейсами
+                            img(src="images/assets/content.jpg").mobile
+
+                        .button-wrap.arrow
+                            a(href="#footer").btn.modal-btn.footer-btn Получи материалы о клубе
+
+                    .image.desktop
+                        img(src="images/assets/content.jpg")
+
+            .video-block-wrap.gray-block
+                video(class="auto-play-video" autoplay muted src="video/video.mp4" in-viewport="true")
+
+                .container-block
+                    .two-block
+                        .image
+                            img(src="images/assets/content2.png")
+
+                        .text.right
+                            h3.title Общайтесь с одноклубникам, назначайте встречи, следите за всеми событиями и новостями в мобильном приложении Клуба 500
+                            ul
+                                li Подробный профиль резидента
+                                li Личные и групповые чаты
+                                li Встречи и резиденты на карте
+                                li Лента новостей
+                                li Умная система знакомств на AI
+
+                            .button-wrap
+                                a(href="#footer").btn.modal-btn.footer-btn Узнай подробнее о всех плюсах приложения
+
+            .resident-block-wrap.title3
+                .container-block
+                    .resident-block
+                        .text.left
+                            h2.title.sticky-text Наши резиденты
+
+                            .description-wrap
+                                .resident.tabs-body-item(data-tab="1").active
+                                    h3.name Иван Иванов
+                                    .quotes Сейчас сложно себя представить в статусе “не резидент клуба”. Это как потерять лучшего друга.
+                                    .info
+                                        .row
+                                            .info-label Компания:
+                                            .info-text Fort Family
+                                        .row
+                                            .info-label Ниша:
+                                            .info-text Продажи
+
+                                    .description
+                                        p В клубе 500 с мая 2018 года, посещал выездные мероприятия в Сингапуре и все встречи в Москве.
+                                        p После вступления в клуб получил мощнейший заряд энергии, что позволило мне более масштабно взглянуть на свои бизнесы и начать масштабирование на весь мир. Были поставлены глобальные цели, которые легко реализовываются при поддержке клуба и его резидентами.
+
+                                .resident.tabs-body-item(data-tab="2")
+                                    h3.name Рублев Станислав 2
+                                    .quotes Сейчас сложно себя представить в статусе “не резидент клуба”.
+                                .resident.tabs-body-item(data-tab="3")
+                                    h3.name Рублев Станислав 3
+                                    .quotes Сейчас сложно себя представить в статусе “не резидент клуба”.
+                                .resident.tabs-body-item(data-tab="4")
+                                    h3.name Рублев Станислав 4
+                                    .quotes Сейчас сложно себя представить в статусе “не резидент клуба”.
+                                .resident.tabs-body-item(data-tab="5")
+                                    h3.name Рублев Станислав 5
+                                    .quotes Сейчас сложно себя представить в статусе “не резидент клуба”.
+                                .resident.tabs-body-item(data-tab="6")
+                                    h3.name Рублев Станислав 6
+                                    .quotes Сейчас сложно себя представить в статусе “не резидент клуба”.
+
+
+
+                            .resident-slider-wrap
+                                .resident-slider.slider
+                                    a(href="#" data-tab="1").resident-slider-item.tabs-head-item.active
+                                        .wrap
+                                            .resident-slider-image
+                                                img(src="images/assets/resident-preview.png")
+                                            .name
+                                                span Барышев
+                                                span Алексей
+                                    a(href="#" data-tab="2").resident-slider-item.tabs-head-item
+                                        .wrap
+                                            .resident-slider-image
+                                                img(src="images/assets/resident-preview.png")
+                                            .name
+                                                span Рублев
+                                                span Станислав
+                                    a(href="#" data-tab="3").resident-slider-item.tabs-head-item
+                                        .wrap
+                                            .resident-slider-image
+                                                img(src="images/assets/resident-preview.png")
+                                            .name
+                                                span Куртов
+                                                span Максим
+                                    a(href="#" data-tab="4").resident-slider-item.tabs-head-item
+                                        .wrap
+                                            .resident-slider-image
+                                                img(src="images/assets/resident-preview.png")
+                                            .name
+                                                span Гафуров
+                                                span Наиль
+                                    a(href="#" data-tab="5").resident-slider-item.tabs-head-item
+                                        .wrap
+                                            .resident-slider-image
+                                                img(src="images/assets/resident-preview.png")
+                                            .name
+                                                span Галетов
+                                                span Сергей
+                                    a(href="#" data-tab="6").resident-slider-item.tabs-head-item
+                                        .wrap
+                                            .resident-slider-image
+                                                img(src="images/assets/resident-preview.png")
+                                            .name
+                                                span Барышев
+                                                span Алексей
+
+                        .image
+                            .tabs-body-item(data-tab="1").active
+                                img(src="images/assets/resident-big.jpg")
+                            .tabs-body-item(data-tab="2")
+                                img(src="images/assets/content2.png")
+                            .tabs-body-item(data-tab="3")
+                                img(src="images/assets/resident-big.jpg")
+                            .tabs-body-item(data-tab="4")
+                                img(src="images/assets/content2.png")
+                            .tabs-body-item(data-tab="5")
+                                img(src="images/assets/resident-big.jpg")
+                            .tabs-body-item(data-tab="6")
+                                img(src="images/assets/content2.png")
+
+
+            .blue-head-mobile
+                .title Оставь заявку и получи журнал клуба
+                .scroll-btn
+
+            .blue-block
+                .container-block
+                    .request-block
+                        .text.left
+                            .mobile-image.mobile
+                                img(src="images/assets/content4.png")
+                            .text-mobile
+                                h2.title.white-color
+                                    span.blue-light-color Оставь заявку&nbsp;
+                                    | и получи журнал с информацией о резидентах Клуба 500, которые станут твоим окружением.
+
+                            .button-wrap
+                                a(href="#footer").btn.btn-white.modal-btn.footer-btn Оставить заявку
+                        .image.desktop
+                            img(src="images/assets/content3.png")
+
+
+        .modal-wrap(id="footer").footer-modal
+            .overflow
+            .footer
+                .container-block
+                    .footer-wrap
+                        .footer-col.left-col.desktop
+                            .h3.title-modal Получи материалы о Клубе 500 и резидентах
+                            p Материалы помогут узнать больше о клубе и принять взвешенное решение.
+                            img(src="images/assets/footer.png")
+                            a(href="#").btn.mobile-btn Оставить заявку
+
+                        .footer-col.center-col
+                            .footer-close-btn
+                            .form-wrap
+                                .title.footer-title Оставь заявку на вступление в клуб
+
+                                form.form
+                                    .row
+                                        .col
+                                            .input-wrap
+                                                input.input(placeholder="Имя")
+                                    .row
+                                        .col
+                                            .input-wrap
+                                                input.input(placeholder="Телефон")
+                                    .row
+                                        .col
+                                            .input-wrap
+                                                input.input(placeholder="Email")
+                                    .row
+                                        .col
+                                            p.gray-color Нажимая кнопку «Оставить заявку» вы принимаете»&nbsp;
+                                                a(href="#conditions")
+                                                    | условия передачи пользовательских данных
+                                    .row
+                                        .col
+                                            button(type="submit").btn.mt-t-10 Оставить заявку
+                                    .row
+                                        .col
+                                            p Заполни заявку и получи подробную презентацию клуба на следующем шаге
+
+                        .footer-col.right-col.desktop
+                            .residents
+                                .label Резидентов
+                                .counter
+                                    .count 314/
+                                    .total 500
+
+                            .event
+                                .label Ближайшее мероприятие
+                                .event-date 22 сентября
+                                p Хочешь  узнать больше про Клуб 500 и принять участие в ближайшем мероприятии - оставь заявку, заполнив форму обратной связи.
+
+        .modal-wrap(id="request")
+            .overflow
+            .modal
+                .modal-close-btn.cross
+                    span.icon-close
+                .modal-body
+                    .form-wrap
+                        .title Оставь заявку
+
+                        form.form
+                            .row
+                                .col
+                                    .input-wrap
+                                        input.input(placeholder="Имя")
+                            .row
+                                .col
+                                    .input-wrap
+                                        input.input(placeholder="Телефон")
+                            .row
+                                .col
+                                    .input-wrap
+                                        input.input(placeholder="Email")
+                            .row
+                                .col
+                                    button(type="submit").btn Оставить заявку
+                            .row
+                                .col
+                                    p.gray-color Заполни заявку и получи подробную презентацию клуба на следующем шаге
+
+        .modal-wrap(id="videoModal")
+            .overflow
+            .modal.video-modal
+                .modal-body
+                    .video
+                        iframe(src="https://www.youtube.com/embed/_wmpQApk644" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
+
+        include ./blocks/footer.jade
+        include ./blocks/scripts.jade
