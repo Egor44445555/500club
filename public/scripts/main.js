@@ -274,7 +274,7 @@ $(document).ready(function() {
         });
 
         influenceBlock.each(function() {
-            if ($(this).offset().top < $(window).scrollTop() + 130) {
+            if ($(this).offset().top < $(window).scrollTop() + 200) {
                 $(this).addClass('active');
             } else {
                 $(this).removeClass('active');
