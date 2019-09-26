@@ -233,9 +233,6 @@ $(document).ready(function() {
             $('.hidden-title').html('').removeClass('active');
             $('.logo').removeClass('hide');
         }
-
-        console.log( blueBlock + blueBlockHeight, 'block');
-        console.log( $(window).scrollTop());
     }
 
 
